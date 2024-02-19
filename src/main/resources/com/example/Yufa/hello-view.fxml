@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="383.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Yufa.HelloController">
+   <children>
+      <Label layoutX="36.0" layoutY="46.0" text="域名：">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="DomainNameFieid" layoutX="81.0" layoutY="45.0" />
+      <Button fx:id="shengchengBut" layoutX="273.0" layoutY="45.0" mnemonicParsing="false" onAction="#shengcheng" text="生成" />
+      <Label layoutX="21.0" layoutY="129.0" text="互联网暴露文本：">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="Exposed_Text_id" layoutX="134.0" layoutY="126.0" prefHeight="0.0" prefWidth="131.0">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="Exposed_Text_copy_But" layoutX="271.0" layoutY="127.0" mnemonicParsing="false" onAction="#Exposed_Text_copy" text="copy" />
+      <Label layoutX="388.0" layoutY="129.0" text="敏感信息泄露：">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="information_leakage_id" layoutX="500.0" layoutY="126.0" prefHeight="0.0" prefWidth="131.0">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="information_leakage_copy_But" layoutX="638.0" layoutY="127.0" mnemonicParsing="false" onAction="#information_leakage_copy" text="copy" />
+      <Label layoutX="22.0" layoutY="180.0" text="互联网暴露文件：">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="Exposed_files_id" layoutX="134.0" layoutY="179.0" prefHeight="0.0" prefWidth="131.0">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="Exposed_files_copy_But" layoutX="271.0" layoutY="180.0" mnemonicParsing="false" onAction="#Exposed_files_copy" text="copy" />
+      <Label layoutX="388.0" layoutY="180.0" text="文件上传路径：">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="File_upload_id" layoutX="500.0" layoutY="179.0" prefHeight="0.0" prefWidth="131.0">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="File_upload_copy_But" layoutX="638.0" layoutY="179.0" mnemonicParsing="false" onAction="#File_upload_copy" text="copy" />
+      <Label layoutX="22.0" layoutY="235.0" text="敏感页面暴露：">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="Sensitive_pages_id" layoutX="134.0" layoutY="233.0" prefHeight="0.0" prefWidth="131.0">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="22.0" layoutY="286.0" text="编辑器地址：">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="388.0" layoutY="235.0" text="后台与注册路径：">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="388.0" layoutY="286.0" text="敏感参数：">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="Editor_id" layoutX="134.0" layoutY="284.0" prefHeight="0.0" prefWidth="131.0">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </TextArea>
+      <TextArea fx:id="Background_registration_id" layoutX="500.0" layoutY="233.0" prefHeight="0.0" prefWidth="131.0">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </TextArea>
+      <TextArea fx:id="sensitivity_parameter_id" layoutX="500.0" layoutY="284.0" prefHeight="0.0" prefWidth="131.0">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="Sensitive_pages_copy_But" layoutX="271.0" layoutY="234.0" mnemonicParsing="false" onAction="#Sensitive_pages_copy" text="copy" />
+      <Button fx:id="Editor_copy_But" layoutX="271.0" layoutY="285.0" mnemonicParsing="false" onAction="#Editor_copy" text="copy" />
+      <Button fx:id="Background_registration_copy_But" layoutX="638.0" layoutY="234.0" mnemonicParsing="false" onAction="#Background_registration_copy" text="copy" />
+      <Button fx:id="sensitivity_parameter_copy_But" layoutX="638.0" layoutY="285.0" mnemonicParsing="false" onAction="#sensitivity_parameter_copy" text="copy" />
+      <Button fx:id="Exposed_Text_Jump_But" layoutX="315.0" layoutY="127.0" mnemonicParsing="false" onAction="#Exposed_Text_Jump" text="Jump" />
+      <Button fx:id="Exposed_files_Jump_But" layoutX="315.0" layoutY="180.0" mnemonicParsing="false" onAction="#Exposed_files_Jump" text="Jump" />
+      <Button fx:id="Sensitive_pages_Jump_But" layoutX="315.0" layoutY="234.0" mnemonicParsing="false" onAction="#Sensitive_pages_Jump" text="Jump" />
+      <Button fx:id="Editor_Jump_But" layoutX="315.0" layoutY="285.0" mnemonicParsing="false" onAction="#Editor_Jump" text="Jump" />
+      <Button fx:id="File_upload_Jump_But" layoutX="682.0" layoutY="179.0" mnemonicParsing="false" onAction="#File_upload_Jump" text="Jump" />
+      <Button fx:id="sensitivity_parameter_Jump_But7" layoutX="682.0" layoutY="285.0" mnemonicParsing="false" onAction="#sensitivity_parameter_Jump" text="Jump" />
+      <Button fx:id="qingchuBut" layoutX="311.0" layoutY="45.0" mnemonicParsing="false" onAction="#qingchu" text="清除" />
+      <Button fx:id="information_leakage_Jump_But" layoutX="682.0" layoutY="128.0" mnemonicParsing="false" onAction="#information_leakage_Jump" text="Jump" />
+      <Button fx:id="Background_registration_Jump_But" layoutX="682.0" layoutY="234.0" mnemonicParsing="false" onAction="#Background_registration_Jump" text="Jump" />
+   </children>
+</AnchorPane>
